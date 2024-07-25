@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35930D"
+    android:orientation="vertical"
+    tools:context=".Registro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:background="#68D82C"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                app:srcCompat="@drawable/casa"
+                android:backgroundTint="@color/Trasnparente"/>
+
+            <ImageButton
+                android:id="@+id/imageBtnClose"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="240dp"
+                app:srcCompat="@drawable/salir"
+                android:backgroundTint="@color/Trasnparente"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cookie"
+            android:gravity="center"
+            android:text="EcoSaveApp"
+            android:textColor="#FF034E06"
+            android:textSize="70sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/usuario" />
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Nombre"
+            android:textColor="#034E06"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editTxtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/Cuadrado"
+            android:backgroundTint="#92F1E8"
+            android:hint="Ingresa tu nombre"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:textColorHint="#FF676464"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:text="Correo"
+            android:textColor="#034E06"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editTxtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/Cuadrado"
+            android:backgroundTint="#92F1E8"
+            android:hint="Ingresa tu correo"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:textColorHint="#676464"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:text="Contraseña"
+            android:textColor="#034E06"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editTxtIngresarContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/Cuadrado"
+            android:backgroundTint="#92F1E8"
+            android:hint="Ingresa tu contraseña"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:textColorHint="#676464"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewVerificarContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="10dp"
+            android:text="Verificar Contraseña"
+            android:textColor="#034E06"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editTxtVerificar"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/Cuadrado"
+            android:backgroundTint="#92F1E8"
+            android:hint="Verifica tu contraseña"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"
+            android:textColorHint="#676464"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#35930D"
+            android:ems="8"
+            android:gravity="center"
+            android:text="Registrarse"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</LinearLayout>
