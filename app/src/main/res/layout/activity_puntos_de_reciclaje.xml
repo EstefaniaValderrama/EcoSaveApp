@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,8 +7,7 @@
     android:layout_height="match_parent"
     android:background="#35930D"
     android:orientation="vertical"
-    tools:context=".AprendeJugando">
-
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,32 +20,32 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
 
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="15dp"
-                android:backgroundTint="@color/Trasnparente"
-                app:srcCompat="@drawable/casa" />
+                app:srcCompat="@drawable/casa"
+                android:backgroundTint="@color/Trasnparente"/>
 
             <ImageButton
                 android:id="@+id/imageBtnClose"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="240dp"
-                android:backgroundTint="@color/Trasnparente"
-                app:srcCompat="@drawable/salir" />
+                app:srcCompat="@drawable/salir"
+                android:backgroundTint="@color/Trasnparente"/>
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="3dp"
             android:fontFamily="@font/cookie"
             android:gravity="center"
             android:text="EcoSaveApp"
@@ -57,51 +54,56 @@
 
         <Button
             android:id="@+id/btnIngresar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="40dp"
             android:layout_gravity="center"
             android:backgroundTint="#35930D"
             android:gravity="center"
-            android:text="Aprende Jugando"
+            android:text="Puntos de Reciclaje"
             android:textColor="#000000"
             android:textSize="26.4sp"
             android:layout_marginTop="2dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="15dp"
             app:cornerRadius = "8dp"
             android:elevation="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            app:srcCompat="@drawable/puntos_de_reciclaje" />
+
+
 
         <TextView
             android:id="@+id/txtViewParrafo1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
-            android:gravity="center"
-            android:text="Mueve los objetos en la caneca correspondiente"
+            android:gravity="center|left"
+            android:text="En el siguiente enlace podrás encontrar varios puntos de reciclaje, incluso; puedes dejar tus datos para programar la recolección de los mismos."
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/txtViewParrafo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center|left"
+            android:text="Podrás buscar tu localidad entre otros videos e información interesante referente al reciclaje."
             android:textSize="24sp" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="280dp"
-            android:layout_height="300dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/jugar" />
-
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/txtViewParrafo3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"
-            android:backgroundTint="#35930D"
-            android:ems="8"
-            android:gravity="center"
-            android:text="Enviar"
-            android:textColor="#000000"
-            android:textSize="30sp" />
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center|left"
+            android:text="https://www.puntosdereciclaje.com/"
+            android:textSize="24sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -124,6 +126,7 @@
                 android:layout_marginLeft="240dp"/>
         </LinearLayout>
 
-    </LinearLayout>
 
+
+    </LinearLayout>
 </LinearLayout>

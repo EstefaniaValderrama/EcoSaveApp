@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#35930D"
-    android:orientation="vertical"
-    tools:context=".AprendeJugando">
-
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,18 +38,25 @@
                 android:backgroundTint="@color/Trasnparente"
                 app:srcCompat="@drawable/salir" />
         </LinearLayout>
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginTop="17dp"
             android:fontFamily="@font/cookie"
             android:gravity="center"
             android:text="EcoSaveApp"
             android:textColor="#FF034E06"
             android:textSize="70sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/reciclar" />
 
         <Button
             android:id="@+id/btnIngresar"
@@ -63,52 +66,93 @@
             android:layout_gravity="center"
             android:backgroundTint="#35930D"
             android:gravity="center"
-            android:text="Aprende Jugando"
+            android:text="Recompensas"
             android:textColor="#000000"
             android:textSize="26.4sp"
             android:layout_marginTop="2dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="30dp"
             app:cornerRadius = "8dp"
             android:elevation="20dp"/>
 
-        <TextView
-            android:id="@+id/txtViewParrafo1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:gravity="center"
-            android:text="Mueve los objetos en la caneca correspondiente"
-            android:textSize="24sp" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="280dp"
-            android:layout_height="300dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/jugar" />
-
-
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"
-            android:backgroundTint="#35930D"
-            android:ems="8"
-            android:gravity="center"
-            android:text="Enviar"
-            android:textColor="#000000"
-            android:textSize="30sp" />
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/imgViewEstrella"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/estrella"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/txtViewParrafo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Vas por buen camino, sigue así"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/imgViewMedalla"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/medalla"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/txtViewParrafo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Falta poco para alcanzar la copa, continua. Vas muy bien!"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgViewCopa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/copa"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/txtViewParrafo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Felicitaciones!!! Ganaste la copa de Oro"
+                android:textSize="24sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp">
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -124,6 +168,8 @@
                 android:layout_marginLeft="240dp"/>
         </LinearLayout>
 
+
     </LinearLayout>
 
+    </LinearLayout>
 </LinearLayout>

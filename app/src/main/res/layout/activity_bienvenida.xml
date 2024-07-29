@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35930D"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:background="#68D82C"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cookie"
+            android:gravity="center"
+            android:text="EcoSaveApp"
+            android:textColor="#FF034E06"
+            android:textSize="65sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="9dp"
+            app:srcCompat="@drawable/reciclar" />
+
+        <TextView
+            android:id="@+id/txtViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Bienvenid@s a EcoSaveApp"
+            android:textColor="#034E06"
+            android:textSize="28sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/txtViewIntroducción"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|"
+            android:text="Nuestra misión es facilitar el reciclaje y ayudarte a contribuir a un mundo más limpio y sostenible. Con nuestra app, podrás aprender a reciclar correctamente, encontrar los puntos de reciclaje más cercanos y recibir consejos útiles para reducir tus residuos. Juntos, podemos marcar la diferencia."
+            android:textColor="#034E06"
+            android:textSize="25sp"
+            android:layout_marginHorizontal="20dp" />
+
+        <TextView
+            android:id="@+id/txtViewIntroduccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Empieza a reciclar hoy y haz de planeta un lugar mejor!"
+            android:textColor="#034E06"
+            android:textSize="25sp"
+            android:layout_marginHorizontal="25dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#35930D"
+            android:ems="8"
+            android:gravity="center"
+            android:text="Empecemos"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+                <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

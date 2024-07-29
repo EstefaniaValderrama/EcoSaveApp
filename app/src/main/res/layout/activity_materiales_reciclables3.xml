@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35930D"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:background="#68D82C"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                app:srcCompat="@drawable/casa"
+                android:backgroundTint="@color/Trasnparente"/>
+
+            <ImageButton
+                android:id="@+id/imageBtnClose"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="240dp"
+                app:srcCompat="@drawable/salir"
+                android:backgroundTint="@color/Trasnparente"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cookie"
+            android:gravity="center"
+            android:text="EcoSaveApp"
+            android:textColor="#FF034E06"
+            android:textSize="80sp" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#35930D"
+            android:gravity="center"
+            android:text="Materiales Reciclables"
+            android:textColor="#000000"
+            android:textSize="26.4sp"
+            android:layout_marginBottom="20dp"
+            app:cornerRadius = "8dp"
+            android:elevation="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_media_rew" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/materiales3" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_media_ff" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewTítulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Vidrio y Metal"
+            android:textColor="#FF034E06"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewParrafo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center|left"
+            android:text="* Separa el vidrio por colores si tu sistema local de reciclaje lo requiere."
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/txtViewParrafo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center|left"
+            android:text="* No incluyas vidrios rotos, cerámicas o espejos."
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtViewParrafo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center|left"
+            android:text="* Latas de aluminio y acero son reciclables; asegúrate de limpiarlas bien."
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtViewParrafo4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center|left"
+            android:text="No reciclar objetos metálicos grandes sin consultar las normas locales."
+            android:textSize="24sp" />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
