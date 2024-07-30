@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Definir el botón ingresar
         Button ingresar = findViewById(R.id.btnIngresar);
+        TextView olvidarContrasena = findViewById(R.id.txtViewOlvidaste);
         //Añadir la navegación entre pantallas
         //Navegación botón ingresar
         ingresar.setOnClickListener(new View.OnClickListener() {
@@ -30,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent menuActivity = new Intent(MainActivity.this, Menu.class);
                 startActivity(menuActivity);
+            }
+        });
+
+        //Navegación botón olvidaste contraseña
+        olvidarContrasena.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent restablecerContrasenaActivity = new Intent(MainActivity.this, RestablecerContrasena.class);
+                startActivity(restablecerContrasenaActivity);
             }
         });
 

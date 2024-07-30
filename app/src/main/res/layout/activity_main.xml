@@ -134,7 +134,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/editTxtOlvidaste"
+            android:id="@+id/txtViewOlvidaste"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
